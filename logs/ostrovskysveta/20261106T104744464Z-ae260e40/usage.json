@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-11-06T13:47:44.5448079+03:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Настройка репозитория"
+  },
+  {
+    "at": "2026-11-06T10:47:44.5638760+00:00",
+    "kind": "tool",
+    "name": "functions.exec / exec_command / apply_patch / request_permissions / request_user_input_async",
+    "purpose": "Создание файлов, проверка Git, сетевой доступ и уточнение автора; включая вызовы до начала учёта"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "person": "ostrovskysveta",
+  "session_id": "20261106T104744464Z-ae260e40",
+  "started_at": "2026-11-06T13:47:44.4649152+03:00",
+  "ended_at": "2026-11-06T10:47:44.6054688+00:00",
+  "duration_seconds": 12787200.605,
+  "task": "Настройка проекта и журналов; начало учёта после создания скрипта, предыдущая работа не измерена",
+  "summary": "Созданы README, AGENTS, инструкция и скрипт; проверены start/usage/decision/stop. Скиллы и плагины не применялись. Время этой записи не охватывает всю настройку.",
+  "input_tokens": null,
+  "output_tokens": null,
+  "token_source": "",
+  "token_unavailable_reason": "Environment has not supplied exact session usage"
+}
