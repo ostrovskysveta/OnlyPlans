@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-06T10:48:07.7941052+00:00",
+    "decision_and_context": "Явный DateKind String предотвращает зависимый от локали разбор времени",
+    "alternatives": "Неявное преобразование дат JSON",
+    "consequences": "Требуется PowerShell 7.5+"
+  }
+]

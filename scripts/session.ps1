@@ -1,3 +1,4 @@
+#Requires -Version 7.5
 param(
     [Parameter(Mandatory,Position=0)][ValidateSet('start','stop','decision','usage')][string]$Action,
     [Parameter(Mandatory)][ValidatePattern('^[a-zA-Z0-9][a-zA-Z0-9-]{0,38}$')][string]$Person,
@@ -28,7 +29,7 @@ if ($Action -eq 'start') {
     return
 }
 if (!(Test-Path -LiteralPath $file)) { throw 'Unknown session' }
-$session = Get-Content -LiteralPath $file -Raw | ConvertFrom-Json
+$session = Get-Content -LiteralPath $file -Raw | ConvertFrom-Json -DateKind String
 if ($session.ended_at) { throw 'Session already closed; start a new session' }
 if ($Action -eq 'stop') {
     if (($null -ne $InputTokens -and $InputTokens -lt 0) -or ($null -ne $OutputTokens -and $OutputTokens -lt 0)) { throw 'Token counts must be nonnegative' }
@@ -46,7 +47,8 @@ if ($Action -eq 'stop') {
     if ($Action -eq 'decision' -and (!$Alternatives -or !$Consequences)) { throw 'Alternatives and Consequences are required' }
     $target = if ($Action -eq 'usage') {'usage.json'} else {'decisions.json'}
     $path = Join-Path $dir $target
-    $items = @(Get-Content -LiteralPath $path -Raw | ConvertFrom-Json)
+    $items = @(Get-Content -LiteralPath $path -Raw | ConvertFrom-Json -DateKind String)
     $entry = if ($Action -eq 'usage') { [ordered]@{at=$now.ToString('o'); kind=$Kind; name=$Name; purpose=$Summary} } else { [ordered]@{at=$now.ToString('o'); decision_and_context=$Summary; alternatives=$Alternatives; consequences=$Consequences} }
     Save $path @($items + $entry)
 }
+

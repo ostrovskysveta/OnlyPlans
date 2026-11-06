@@ -1,0 +1,13 @@
+{
+  "person": "ostrovskysveta",
+  "session_id": "20261106T104807764Z-27d96376",
+  "started_at": "2026-11-06T10:48:07.7646932+00:00",
+  "ended_at": "2026-11-06T10:48:07.8310480+00:00",
+  "duration_seconds": 0.066,
+  "task": "Проверка исправления разбора ISO времени",
+  "summary": "Проверено сохранение ISO и длительности",
+  "input_tokens": null,
+  "output_tokens": null,
+  "token_source": "",
+  "token_unavailable_reason": "Environment has not supplied exact session usage"
+}
