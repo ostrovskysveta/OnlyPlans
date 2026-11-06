@@ -51,4 +51,3 @@ if ($Action -eq 'stop') {
     $entry = if ($Action -eq 'usage') { [ordered]@{at=$now.ToString('o'); kind=$Kind; name=$Name; purpose=$Summary} } else { [ordered]@{at=$now.ToString('o'); decision_and_context=$Summary; alternatives=$Alternatives; consequences=$Consequences} }
     Save $path @($items + $entry)
 }
-
