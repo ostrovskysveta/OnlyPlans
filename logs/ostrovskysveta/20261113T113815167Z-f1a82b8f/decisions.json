@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-13T11:38:17.4997808+00:00",
+    "decision_and_context": "Preserve existing journals and add paired analytics session",
+    "alternatives": "Replace existing journals",
+    "consequences": "Both formats remain; paired totals must not be summed"
+  }
+]
