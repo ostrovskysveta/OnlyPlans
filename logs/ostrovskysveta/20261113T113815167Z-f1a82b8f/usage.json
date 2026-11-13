@@ -1,0 +1,38 @@
+[
+  {
+    "at": "2026-11-13T11:38:17.5587232+00:00",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Repository changes and verification"
+  },
+  {
+    "at": "2026-11-13T11:38:17.5800430+00:00",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Analytics journal"
+  },
+  {
+    "at": "2026-11-13T11:41:49.6464213+00:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Implementation and validation"
+  },
+  {
+    "at": "2026-11-13T11:41:49.7649753+00:00",
+    "kind": "skill",
+    "name": "computer-use",
+    "purpose": "GitHub browser operations"
+  },
+  {
+    "at": "2026-11-13T11:41:49.7893991+00:00",
+    "kind": "tool",
+    "name": "mcp__cua_repl.js",
+    "purpose": "GitHub browser operations"
+  },
+  {
+    "at": "2026-11-13T11:41:49.8100429+00:00",
+    "kind": "skill",
+    "name": "plugin-management",
+    "purpose": "Check GitHub connector availability"
+  }
+]
