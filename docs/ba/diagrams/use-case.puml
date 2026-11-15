@@ -51,6 +51,12 @@ rectangle "OnlyPlans" {
   ' Таймлайн
   usecase "UC-11 Таймлайн с вехами" as U11
 
+  ' Поиск
+  usecase "UC-12 Поиск и фильтры" as U12
+
+  ' Комментарии
+  usecase "UC-13 Комментарии и история" as U13
+
   ' Просмотр
   usecase "UC-8 Просмотр роадмапа (view-only)" as U8
 
@@ -73,6 +79,8 @@ FULL --> U8
 FULL --> U9
 FULL --> U10
 FULL --> U11
+FULL --> U12
+FULL --> U13
 
 ' Ограниченные права
 LIM --> U1
@@ -82,6 +90,8 @@ LIM --> U6a
 LIM --> U6b
 LIM --> U8
 LIM --> U11
+LIM --> U12
+LIM --> U13
 
 ' Разработчик: дополнительно своя нагрузка (в отличие от аналитика)
 DEV --> U10
@@ -91,5 +101,6 @@ VIEW --> U3
 VIEW --> U6a
 VIEW --> U8
 VIEW --> U11
+VIEW --> U12
 
 @enduml
