@@ -1,0 +1,95 @@
+@startuml
+' OnlyPlans — Use Case diagram (v2)
+' Акторы сгруппированы по правам (полные/ограниченные/view-only). См. docs/ba/03-use-cases.md
+left to right direction
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+' Ровные ортогональные линии вместо диагоналей — понятнее, к какому юзкейсу ведёт стрелка
+skinparam linetype ortho
+skinparam nodesep 45
+skinparam ranksep 90
+
+' Группа полных прав (все юзкейсы)
+actor "Полные права" as FULL
+actor "Тимлид delivery" as DL
+actor "ПМ / БА (discovery)" as DPM
+DL --|> FULL
+DPM --|> FULL
+
+' Группа ограниченных прав
+actor "Ограниченные права" as LIM
+actor "Аналитик (discovery)" as DAN
+actor "Разработчик (delivery)" as DEV
+DAN --|> LIM
+DEV --|> LIM
+
+' View-only
+actor "Руководство / другие команды" as VIEW
+
+rectangle "OnlyPlans" {
+
+  ' Discovery
+  usecase "UC-1 Создать инициативу" as U1
+  usecase "UC-2 Настроить этапы команды" as U2
+  usecase "UC-3 Отследить статусы инициатив" as U3
+
+  ' Delivery / планирование
+  usecase "UC-4 Спланировать неделю (delivery)" as U4
+  usecase "UC-5 Передвинуть задачу по этапам" as U5
+  usecase "UC-7 Настроить пресеты длительностей" as U7
+
+  ' Календарь
+  usecase "UC-6a Просмотреть календарный вид" as U6a
+  usecase "UC-6b Настроить календарный вид" as U6b
+
+  ' Свимлайны
+  usecase "UC-9 Настроить свимлайны по типам" as U9
+
+  ' Нагрузка
+  usecase "UC-10 Управление нагрузкой" as U10
+
+  ' Таймлайн
+  usecase "UC-11 Таймлайн с вехами" as U11
+
+  ' Просмотр
+  usecase "UC-8 Просмотр роадмапа (view-only)" as U8
+
+  ' Связи между юзкейсами
+  U1 ..> U2 : включает (этапы)
+  U4 ..> U7 : включает (пресеты)
+  U6b ..> U6a : использует
+}
+
+' Полные права: все юзкейсы
+FULL --> U1
+FULL --> U2
+FULL --> U3
+FULL --> U4
+FULL --> U5
+FULL --> U6a
+FULL --> U6b
+FULL --> U7
+FULL --> U8
+FULL --> U9
+FULL --> U10
+FULL --> U11
+
+' Ограниченные права
+LIM --> U1
+LIM --> U3
+LIM --> U5
+LIM --> U6a
+LIM --> U6b
+LIM --> U8
+LIM --> U11
+
+' Разработчик: дополнительно своя нагрузка (в отличие от аналитика)
+DEV --> U10
+
+' View-only
+VIEW --> U3
+VIEW --> U6a
+VIEW --> U8
+VIEW --> U11
+
+@enduml
