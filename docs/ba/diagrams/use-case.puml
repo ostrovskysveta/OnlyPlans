@@ -1,6 +1,7 @@
 @startuml
-' OnlyPlans — Use Case diagram (v2)
-' Акторы сгруппированы по правам (полные/ограниченные/view-only). См. docs/ba/03-use-cases.md
+' OnlyPlans — Use Case diagram (v3)
+' Роли: Редактор плана (Продакт, Тимлид, БА) — создают и редактируют план;
+' Сотрудник — смотрит свои работы; Руководитель/Стейкхолдер — view-only. См. docs/ba/03-use-cases.md
 left to right direction
 skinparam actorStyle awesome
 skinparam packageStyle rectangle
@@ -9,22 +10,9 @@ skinparam linetype ortho
 skinparam nodesep 45
 skinparam ranksep 90
 
-' Группа полных прав (все юзкейсы)
-actor "Полные права" as FULL
-actor "Тимлид delivery" as DL
-actor "ПМ / БА (discovery)" as DPM
-DL --|> FULL
-DPM --|> FULL
-
-' Группа ограниченных прав
-actor "Ограниченные права" as LIM
-actor "Аналитик (discovery)" as DAN
-actor "Разработчик (delivery)" as DEV
-DAN --|> LIM
-DEV --|> LIM
-
-' View-only
-actor "Руководство / другие команды" as VIEW
+actor "Редактор плана\n(Продакт, Тимлид, БА)" as ED
+actor "Сотрудник\n(разработчик/аналитик)" as EMP
+actor "Руководитель / Стейкхолдер" as STK
 
 rectangle "OnlyPlans" {
 
@@ -66,41 +54,39 @@ rectangle "OnlyPlans" {
   U6b ..> U6a : использует
 }
 
-' Полные права: все юзкейсы
-FULL --> U1
-FULL --> U2
-FULL --> U3
-FULL --> U4
-FULL --> U5
-FULL --> U6a
-FULL --> U6b
-FULL --> U7
-FULL --> U8
-FULL --> U9
-FULL --> U10
-FULL --> U11
-FULL --> U12
-FULL --> U13
+' Редактор плана: все юзкейсы (полный CRUD)
+ED --> U1
+ED --> U2
+ED --> U3
+ED --> U4
+ED --> U5
+ED --> U6a
+ED --> U6b
+ED --> U7
+ED --> U8
+ED --> U9
+ED --> U10
+ED --> U11
+ED --> U12
+ED --> U13
 
-' Ограниченные права
-LIM --> U1
-LIM --> U3
-LIM --> U5
-LIM --> U6a
-LIM --> U6b
-LIM --> U8
-LIM --> U11
-LIM --> U12
-LIM --> U13
+' Сотрудник: смотрит свои работы (+ статус своих задач, своя нагрузка)
+EMP --> U3
+EMP --> U5
+EMP --> U6a
+EMP --> U6b
+EMP --> U8
+EMP --> U10
+EMP --> U11
+EMP --> U12
+EMP --> U13
 
-' Разработчик: дополнительно своя нагрузка (в отличие от аналитика)
-DEV --> U10
-
-' View-only
-VIEW --> U3
-VIEW --> U6a
-VIEW --> U8
-VIEW --> U11
-VIEW --> U12
+' Руководитель / Стейкхолдер: view-only
+STK --> U3
+STK --> U6a
+STK --> U6b
+STK --> U8
+STK --> U11
+STK --> U12
 
 @enduml
