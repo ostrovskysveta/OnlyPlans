@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-11-09T19:44:16.3666420+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Получение /api/v2/openapi.json, анализ путей и схем, проба wiki"
+  },
+  {
+    "at": "2026-11-09T19:44:16.7158150+00:00",
+    "kind": "skill",
+    "name": "wiki",
+    "purpose": "Попытка найти доку по Whiteboard в wiki.tcsbank.ru (без токена недоступен поиск)"
+  }
+]

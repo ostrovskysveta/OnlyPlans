@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-11-09T19:48:31.1227480+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Извлечение URL-констант из бандла; проверка чтения элементов по guest REST (работает); handshake emitter socket.io"
+  },
+  {
+    "at": "2026-11-09T19:48:31.4726850+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Диагностика python-socketio: ведёт на /socket.io/ без пути; нужен ручной polling-клиент"
+  }
+]

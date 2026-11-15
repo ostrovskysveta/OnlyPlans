@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-11-11T13:29:44.9879830+00:00",
+    "kind": "tool",
+    "name": "write_file",
+    "purpose": "docs/github-onboarding.md — инструкция подключения к GitHub для не-технических участников команды (macOS, установка gh + auth)"
+  },
+  {
+    "at": "2026-11-11T13:29:45.3604070+00:00",
+    "kind": "tool",
+    "name": "ask_user_question",
+    "purpose": "Уточнение: scope (установка+auth), аудитория (не-технические), формат (Markdown), ОС (macOS)"
+  }
+]

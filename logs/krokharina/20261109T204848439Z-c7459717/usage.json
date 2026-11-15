@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-09T20:48:48.8251530+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Переавторизация GitHub-токена со scope workflow; настройка .github/workflows/plantuml.yml (docker://plantuml, chmod, contents:write); прогон в CI - success"
+  }
+]

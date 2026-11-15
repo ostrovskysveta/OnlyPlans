@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-11T13:42:49.7528350+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Выгрузка скиллов: export/skills/ (business-analysis, wiki, plantuml-diagrams, skill-session-logger) + zip"
+  }
+]

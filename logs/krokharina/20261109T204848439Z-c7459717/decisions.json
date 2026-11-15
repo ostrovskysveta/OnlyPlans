@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-09T20:48:49.1965530+00:00",
+    "decision_and_context": "PlantUML авто-рендер в GitHub работает (docker://plantuml/plantuml, chmod для записи, permissions contents:write); токен перевыпущен со scope workflow",
+    "alternatives": "plantuml/plantuml-action (не существует); без авто-рендера",
+    "consequences": "Диаграммы рендерятся и коммитятся автоматически при пуше .puml"
+  }
+]

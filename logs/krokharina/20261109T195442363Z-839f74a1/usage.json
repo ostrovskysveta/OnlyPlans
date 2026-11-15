@@ -1,0 +1,32 @@
+[
+  {
+    "at": "2026-11-09T19:58:33.9299850+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Realtime: websocket к emitter (wss + origin + guest cookie) работает; namespace /boards + auth token подключается (connect-ack, connection-info)"
+  },
+  {
+    "at": "2026-11-09T19:58:34.2888540+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "REST upsert элементов (PUT /emitter/boards/<id>/upsert-elements-new-board) -> 403 для guest; создание только через realtime"
+  },
+  {
+    "at": "2026-11-09T20:05:44.3569160+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Realtime-клиент: протокол join-board(буфер user) + upsert-elements(сериализованный {version:2,payload}) — создание элементов на доске РАБОТАЕТ (проверено)"
+  },
+  {
+    "at": "2026-11-09T20:05:44.7314010+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "CJM отрисован на доске (34 элемента: заголовок, 8 стадий, детали, эмоц. кривая)"
+  },
+  {
+    "at": "2026-11-09T20:05:45.0942940+00:00",
+    "kind": "tool",
+    "name": "write_file",
+    "purpose": "docs/ba/*: конкурентный анализ, Vision&Scope, JTBD, требования, PlantUML, CJM"
+  }
+]

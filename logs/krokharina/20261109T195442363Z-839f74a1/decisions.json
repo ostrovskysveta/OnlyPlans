@@ -1,0 +1,14 @@
+[
+  {
+    "at": "2026-11-09T19:58:34.6573230+00:00",
+    "decision_and_context": "Чтение элементов - REST (работает); запись/создание - realtime socket (namespace /boards, auth token; REST upsert 403). Протокол создания элементов в обратной разработке",
+    "alternatives": "REST upsert (403); socket с namespace /boards",
+    "consequences": "Realtime-соединение установлено; события создания элементов ещё выясняются; CJM на доске - после завершения"
+  },
+  {
+    "at": "2026-11-09T20:05:45.4602640+00:00",
+    "decision_and_context": "Создание элементов на доске Whiteboard реализовано (realtime socket /boards: connect-ack -> join-board -> upsert-elements). CJM отрисован. БА-документы созданы",
+    "alternatives": "REST upsert (403); polling socket (invalid session)",
+    "consequences": "Рисование работает; тестовый элемент требует отдельного удаления (дело доработать)"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-11T13:29:45.7224040+00:00",
+    "decision_and_context": "Скилл «подключение к GitHub» создан как Markdown-инструкция для не-технических пользователей macOS: установка gh CLI (brew или вручную) + gh auth login (device flow). Файл docs/github-onboarding.md",
+    "alternatives": "Полный workflow команды; Nessy-скилл; для Windows",
+    "consequences": "Простая пошаговая инструкция; можно скинуть команде; добавить в командный репо — по явному запросу"
+  }
+]

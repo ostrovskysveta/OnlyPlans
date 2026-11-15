@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-09T19:27:54.7883490+00:00",
+    "decision_and_context": "Личные журналы переведены на формат команды (session.ps1: logs/<login>/<session>/work|decisions|usage.json)",
+    "alternatives": "Оставить JSONL+markdown; вести оба формата",
+    "consequences": "Журналы совместимы с командным репо для будущей синхронизации; требуется pwsh 7.5+"
+  }
+]

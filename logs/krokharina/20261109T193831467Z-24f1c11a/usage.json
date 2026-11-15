@@ -1,0 +1,20 @@
+[
+  {
+    "at": "2026-11-09T19:38:31.8426690+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "curl-запросы к API белборда, разбор JS-бандла, установка python-socketio"
+  },
+  {
+    "at": "2026-11-09T19:38:32.2035440+00:00",
+    "kind": "tool",
+    "name": "read_file",
+    "purpose": "изучение GLOBAL_APP_SETTINGS, guest-flow, модели элементов Unidraw"
+  },
+  {
+    "at": "2026-11-09T19:38:32.5811070+00:00",
+    "kind": "tool",
+    "name": "write_file",
+    "purpose": "docs/whiteboard-access.md"
+  }
+]

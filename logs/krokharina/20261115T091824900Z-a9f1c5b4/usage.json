@@ -1,0 +1,38 @@
+[
+  {
+    "at": "2026-11-15T09:18:29.2486720+00:00",
+    "kind": "skill",
+    "name": "business-analysis",
+    "purpose": "Структура БА-документа (V&S, US, UC) для OnlyPlans"
+  },
+  {
+    "at": "2026-11-15T09:18:29.6481920+00:00",
+    "kind": "tool",
+    "name": "dpJira_MCP",
+    "purpose": "Чтение Jira PTIN: статусы Idea (PDLC) и delivery; project key"
+  },
+  {
+    "at": "2026-11-15T09:18:30.0299990+00:00",
+    "kind": "tool",
+    "name": "whiteboard_draw",
+    "purpose": "Чтение содержимого доски whiteboard (REST guest)"
+  },
+  {
+    "at": "2026-11-15T09:18:30.4273370+00:00",
+    "kind": "tool",
+    "name": "PlantUML_GitHubAction",
+    "purpose": "Авто-отрисовка use-case.puml -> PNG при пуше"
+  },
+  {
+    "at": "2026-11-15T09:18:30.8376600+00:00",
+    "kind": "tool",
+    "name": "python_xlsx_pdf",
+    "purpose": "Парсинг Excel-роадмапа (zip+XML) и PDF (pypdf)"
+  },
+  {
+    "at": "2026-11-15T09:18:31.2263600+00:00",
+    "kind": "model",
+    "name": "llm_context",
+    "purpose": "Контекст сессии: ~206k использовано / 254k всего (~39%)"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "person": "krokharina",
+  "session_id": "20261115T091824900Z-a9f1c5b4",
+  "started_at": "2026-11-15T09:18:24.9008760+00:00",
+  "ended_at": "2026-11-15T09:18:36.4505280+00:00",
+  "duration_seconds": 11.55,
+  "task": "БА OnlyPlans с нуля: V&S (Вигерс), user stories, use cases+диаграмма, анализ конкурентов (open-source+коммерч.+Q-planner); данные из Excel/Jira/PDF; push в GitHub; чистка export/skills",
+  "summary": "БА готов и запушен в krokharina/onlyplans (main). Рабочая директория чистая. Контекст сессии ~206k/254k (~39%).",
+  "input_tokens": null,
+  "output_tokens": null,
+  "token_source": "",
+  "token_unavailable_reason": "Environment has not supplied exact session usage"
+}

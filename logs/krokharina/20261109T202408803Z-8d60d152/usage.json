@@ -1,0 +1,32 @@
+[
+  {
+    "at": "2026-11-09T20:24:32.2472420+00:00",
+    "kind": "skill",
+    "name": "business-analysis",
+    "purpose": "Структура БА-документа инициативы (source: ~/.nessy/skills/business-analysis)"
+  },
+  {
+    "at": "2026-11-09T20:24:32.6106340+00:00",
+    "kind": "skill",
+    "name": "wiki",
+    "purpose": "Доступ к wiki.tcsbank.ru (source: ~/.nessy/extensions/wiki/skills/wiki)"
+  },
+  {
+    "at": "2026-11-09T20:24:32.9721990+00:00",
+    "kind": "plugin",
+    "name": "plantuml-github-action",
+    "purpose": "PlantUML GitHub Action (marketplace plantuml/plantuml-action) для отрисовки .puml->.png"
+  },
+  {
+    "at": "2026-11-09T20:29:50.6053170+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Отрисовка PlantUML в PNG через plantuml.com (рендер-скрипт); GitHub Action plantuml.yml"
+  },
+  {
+    "at": "2026-11-09T20:29:50.9875180+00:00",
+    "kind": "tool",
+    "name": "run_shell_command",
+    "purpose": "Обогащение CJM на доске: эмодзи эмоций, бар-график, детализация; удаление старого через delete()"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-15T10:18:01.2145360+00:00",
+    "kind": "tool",
+    "name": "devplatform_activity",
+    "purpose": "Синхронизация с https://devplatform.tcsbank.ru/users/a.n.krokh/activity: за год 917 обращений к Nestor; за месяц: 324 запроса (Nessy CLI 307, Proteus 17, инструменты 97, сессий 68), токенов 231 млн (Nessy CLI), внешних моделей 0,00$, внутренних 2100,60₽"
+  }
+]

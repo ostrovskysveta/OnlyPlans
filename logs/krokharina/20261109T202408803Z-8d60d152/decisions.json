@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-09T20:29:51.3442670+00:00",
+    "decision_and_context": "PlantUML: отдельные файлы с введением + GitHub Action (нужен workflow-scope токена, файл пока не запушен); CJM обогащён эмодзи и бар-графиком",
+    "alternatives": "Один общий .puml; без авто-рендера",
+    "consequences": "Диаграммы отрендерены в PNG и запушены; GitHub Action требует повторной авторизации с workflow-scope"
+  }
+]
