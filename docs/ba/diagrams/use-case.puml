@@ -1,7 +1,7 @@
 @startuml
 ' OnlyPlans — Use Case diagram (v3)
 ' Роли: Редактор плана (Продакт, Тимлид, БА) — создают и редактируют план;
-' Сотрудник — смотрит свои работы; Руководитель/Стейкхолдер — view-only. См. docs/ba/03-use-cases.md
+' Сотрудник — смотрит свои работы; Руководитель/Стейкхолдер — view-only. См. docs/ba/02-user-stories.md
 left to right direction
 skinparam actorStyle awesome
 skinparam packageStyle rectangle
