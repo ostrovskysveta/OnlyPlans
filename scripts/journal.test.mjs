@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {estimateText, describeTokens} from './token-estimate.mjs';
 
 const script = path.resolve('scripts/journal.mjs');
 test('journal lifecycle, invalid mutations and PR coverage', () => {
@@ -41,7 +42,7 @@ test('journal lifecycle, invalid mutations and PR coverage', () => {
     run(['close',id,'Duplicate'],false);
     git('add','.'); git('commit','-m','closed log');
     run(['check',base]);
-    assert.match(run(['report']),/\| alice \| 1 \| .* \| 42 \| 0 \| 0 \|/);
+    assert.match(run(['report']),/\| alice \| 1 \| .* \| 42 \| 0 \| 0 \| 0 \|/);
     assert.ok(fs.existsSync(path.join(cwd,'logs','decisions','alice',id+'.json')));
     assert.ok(fs.existsSync(path.join(cwd,'logs','usage','alice',id+'.json')));
     assert.match(fs.readFileSync(path.join(cwd,'logs','decisions','alice','README.md'),'utf8'),/Choice/);
@@ -66,6 +67,33 @@ test('journal lifecycle, invalid mutations and PR coverage', () => {
     fs.writeFileSync(file,JSON.stringify(invalid));
     run(['check'],false);
   } finally { fs.rmSync(cwd,{recursive:true,force:true}); }
+});
+
+test('token estimates: mixed text, idempotent samples, exact usage precedence, history fallback',()=>{
+ assert.equal(estimateText('abcd').total,1);
+ assert.equal(estimateText('я'.repeat(17)).total,10);
+ assert.equal(estimateText('😀').chars,1);
+ assert.equal(estimateText('').total,0);
+ const cwd=fs.mkdtempSync(path.join(os.tmpdir(),'onlyplans-estimates-'));
+ const run=(args,input,ok=true)=>{const r=spawnSync(process.execPath,[script,...args],{cwd,input,encoding:'utf8'});assert.equal(r.status===0,ok,r.stderr);return r.stdout.trim();};
+ const load=id=>JSON.parse(fs.readFileSync(path.join(cwd,'logs/work/alice',id+'.json')));
+ try{
+ const id=run(['start','alice','Estimation task','Test']);
+ const secret='private-content-'.repeat(20);
+ run(['observe',id,'turn1-input','input'],secret);
+ const first=load(id);assert.equal(first.tokens.total,estimateText(secret).total);assert.equal(first.tokens.scope,'observed_text');assert.ok(!JSON.stringify(first).includes(secret));
+ run(['observe',id,'turn1-input','input'],secret);assert.equal(load(id).tokens.total,first.tokens.total);
+ run(['observe',id,'turn1-output','output'],'я'.repeat(17));assert.equal(load(id).tokens.total,first.tokens.total+10);
+ run(['observe',id,'bad','input'],'',false);
+ run(['close',id,'Complete']);run(['check']);
+ assert.match(fs.readFileSync(path.join(cwd,'logs/work/alice/README.md'),'utf8'),/Точное количество токенов неизвестно, но примерно/);
+ run(['observe',id,'closed','input'],'abc',false);
+ const exact=run(['start','alice','Exact usage','Test']);run(['tokens',exact,'reported','999','API fixture']);run(['observe',exact,'event','tool'],'abcd');run(['close',exact,'Complete']);assert.equal(load(exact).tokens.total,999);assert.equal(load(exact).tokens.source,'reported');
+ const legacy=run(['start','alice','Legacy text','Test']);run(['close',legacy,'Legacy summary']);const old=load(legacy);old.tokens={source:'unavailable',total:null,evidence:null};fs.writeFileSync(path.join(cwd,'logs/work/alice',legacy+'.json'),JSON.stringify(old));
+ run(['estimate-history']);assert.equal(load(legacy).tokens.scope,'journal_only');assert.ok(load(legacy).tokens.total>0);assert.equal(load(exact).tokens.total,999);assert.match(describeTokens(load(legacy).tokens),/не расхода всей сессии/);
+ const before=fs.readFileSync(path.join(cwd,'logs/work/alice',legacy+'.json'),'utf8');run(['estimate-history']);assert.equal(fs.readFileSync(path.join(cwd,'logs/work/alice',legacy+'.json'),'utf8'),before);
+ run(['check']);
+ }finally{fs.rmSync(cwd,{recursive:true,force:true});}
 });
 
 test('migration preserves every source byte, merges linked pairs and keeps unpaired sessions',()=>{

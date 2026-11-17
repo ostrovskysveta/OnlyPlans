@@ -9,9 +9,13 @@
   "status": "closed",
   "duration_sec": 215.54,
   "tokens": {
-    "source": "unavailable",
-    "total": null,
-    "evidence": null
+    "source": "estimated",
+    "total": 462,
+    "range_low": 371,
+    "range_high": 913,
+    "scope": "journal_only",
+    "method": "characters-v1",
+    "evidence": "Только сохранившиеся тексты задачи, результата, решений и инструментов. Исходная переписка недоступна; расход всей сессии по этим данным оценить нельзя. Архивные копии original_sources не учитываются."
   },
   "decisions_reviewed": true,
   "capabilities_reviewed": true,
