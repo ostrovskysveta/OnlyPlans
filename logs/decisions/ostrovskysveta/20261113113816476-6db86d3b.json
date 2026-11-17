@@ -1,0 +1,37 @@
+[
+  {
+    "at": "2026-11-13T11:38:17.4997808+00:00",
+    "decision_and_context": "Preserve existing journals and add paired analytics session",
+    "alternatives": "Replace existing journals",
+    "consequences": "Both formats remain; paired totals must not be summed",
+    "ts": "2026-11-13T11:38:17.4997808+00:00",
+    "session_id": "20261113113816476-6db86d3b",
+    "participant": "ostrovskysveta",
+    "context": "Контекст и выбор объединены в старой записи",
+    "choice": "Preserve existing journals and add paired analytics session",
+    "reason": "Не указана в исходной записи",
+    "source_session_id": "20261113T113815167Z-f1a82b8f"
+  },
+  {
+    "ts": "2026-11-13T11:38:17.457Z",
+    "context": "Existing mandatory PowerShell journals",
+    "choice": "Preserve both journal protocols and link paired sessions",
+    "alternatives": "Replace old protocol",
+    "reason": "User requires preserving AGENTS instructions",
+    "consequences": "Keep history intact; never add paired durations or token totals",
+    "session_id": "20261113113816476-6db86d3b",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261113113816476-6db86d3b"
+  },
+  {
+    "ts": "2026-11-13T11:41:50.477Z",
+    "context": "Git credential manager denied access; GitHub browser authenticated",
+    "choice": "Upload through GitHub browser",
+    "alternatives": "Stop at local changes",
+    "reason": "User authorized publishing PR and browser can do it",
+    "consequences": "Commit via UI while retaining local verified sources",
+    "session_id": "20261113113816476-6db86d3b",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261113113816476-6db86d3b"
+  }
+]

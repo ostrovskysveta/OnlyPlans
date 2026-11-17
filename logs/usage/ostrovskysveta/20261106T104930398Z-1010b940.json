@@ -1,0 +1,24 @@
+[
+  {
+    "at": "2026-11-06T10:49:56.0489960+00:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Диагностика входа",
+    "ts": "2026-11-06T10:49:56.0489960+00:00",
+    "session_id": "20261106T104930398Z-1010b940",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261106T104930398Z-1010b940"
+  },
+  {
+    "at": "2026-11-06T10:49:56.1059415+00:00",
+    "kind": "tool",
+    "name": "functions.exec / exec_command",
+    "purpose": "Проверка настроек Git и доступности Windows Credential Manager",
+    "ts": "2026-11-06T10:49:56.1059415+00:00",
+    "session_id": "20261106T104930398Z-1010b940",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261106T104930398Z-1010b940"
+  }
+]

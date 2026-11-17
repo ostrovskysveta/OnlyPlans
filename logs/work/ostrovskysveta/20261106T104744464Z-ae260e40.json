@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "id": "20261106T104744464Z-ae260e40",
+  "participant": "ostrovskysveta",
+  "task": "Настройка проекта и журналов; начало учёта после создания скрипта, предыдущая работа не измерена",
+  "environment": "unknown (legacy)",
+  "started_at": "2026-11-06T10:47:44.4649152+00:00",
+  "ended_at": "2026-11-06T10:47:44.6054688+00:00",
+  "status": "closed",
+  "duration_sec": 0.141,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": false,
+  "capabilities_reviewed": false,
+  "result": "Созданы README, AGENTS, инструкция и скрипт; проверены start/usage/decision/stop. Скиллы и плагины не применялись. Время этой записи не охватывает всю настройку.",
+  "imported": true,
+  "source_ids": [
+    "20261106T104744464Z-ae260e40"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261106T104744464Z-ae260e40/work.json",
+      "sha256": "dcc21af4c5dec0ac2095771eca5b67334bfd81f7be7ec90480c45e04515a9ef2",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261106T104744464Z-ae260e40\",\r\n  \"started_at\": \"2026-11-06T10:47:44.4649152+00:00\",\r\n  \"ended_at\": \"2026-11-06T10:47:44.6054688+00:00\",\r\n  \"duration_seconds\": 0.141,\r\n  \"task\": \"Настройка проекта и журналов; начало учёта после создания скрипта, предыдущая работа не измерена\",\r\n  \"summary\": \"Созданы README, AGENTS, инструкция и скрипт; проверены start/usage/decision/stop. Скиллы и плагины не применялись. Время этой записи не охватывает всю настройку.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104744464Z-ae260e40/decisions.json",
+      "sha256": "fb1bcd9971c46268be5cbf7eadcd4ff1a918db618f8ac826863bc4f260b69f80",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T13:47:44.5753601+03:00\",\r\n    \"decision_and_context\": \"Стек пока не выбран: создаём описание и протокол команды без приложения\",\r\n    \"alternatives\": \"Выбрать стек без обсуждения\",\r\n    \"consequences\": \"Реализация приложения требует следующего шага\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-06T10:47:44.5855457+00:00\",\r\n    \"decision_and_context\": \"Токены без достоверного источника храним как null, журналы разделяем по людям и сессиям\",\r\n    \"alternatives\": \"Оценивать токены; общий файл журнала\",\r\n    \"consequences\": \"Неизмеренные токены видны явно; меньше конфликтов Git\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104744464Z-ae260e40/usage.json",
+      "sha256": "53bd26843ebb2aa7fb2813f4c5184b49b6330111f82e05938fd9c56feb7c71f2",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T13:47:44.5448079+03:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Настройка репозитория\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-06T10:47:44.5638760+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec / exec_command / apply_patch / request_permissions / request_user_input_async\",\r\n    \"purpose\": \"Создание файлов, проверка Git, сетевой доступ и уточнение автора; включая вызовы до начала учёта\"\r\n  }\r\n]\r\n"
+    }
+  ]
+}

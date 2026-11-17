@@ -1,0 +1,47 @@
+[
+  {
+    "ts": "2026-11-17T19:44:14.378Z",
+    "session_id": "20261117194141785-5c56891e",
+    "participant": "ostrovskysveta",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Объединение журналов",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:44:14.474Z",
+    "session_id": "20261117194141785-5c56891e",
+    "participant": "ostrovskysveta",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Ведение единого журнала",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:44:14.577Z",
+    "session_id": "20261117194141785-5c56891e",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Чтение, правки, Git и проверки",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:44:14.674Z",
+    "session_id": "20261117194141785-5c56891e",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "apply_patch",
+    "purpose": "Изменение скриптов и тестов",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:44:14.772Z",
+    "session_id": "20261117194141785-5c56891e",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "mcp__node_repl.js",
+    "purpose": "Обновление документации",
+    "version": "unknown"
+  }
+]

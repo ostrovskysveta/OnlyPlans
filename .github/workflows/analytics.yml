@@ -30,3 +30,9 @@ jobs:
           fi
       - name: Publish analytics summary
         run: node scripts/journal.mjs report >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify readable journal pages are current
+        run: |
+          node scripts/journal.mjs render
+          git diff --exit-code -- logs
+          test -z "$(git ls-files --others --exclude-standard -- logs)"

@@ -1,10 +1,12 @@
 ---
 name: project-journal
-description: Maintain OnlyPlans personal work sessions, decisions, and used modes/skills/plugins in versioned analytics files during project work.
+description: Maintain OnlyPlans work, decisions and used modes/skills/plugins in one versioned journal, grouped by participant.
 ---
 
-Read docs/analytics.md and use scripts/journal.mjs from repository root. Start a new session for this participant and chat before substantive work; never reuse another chat's open session. Ask for participant handle if unknown. Record actual decisions when made and capabilities when used, including this skill and the agent's mode. Record only observed use; installed or available does not mean used. Repeat use of the same capability in one session can share one entry; explain its purpose. Unknown versions stay unknown.
+Read docs/logging.md. Use scripts/journal.mjs from repository root. The ONLY journal is logs/, split into work, decisions and usage, then participant. One start creates three records sharing one ID and updates readable README pages. Never create a parallel analytics or PowerShell record.
 
-Write files during work, not in a hidden conversational buffer. Never store full chats, secrets or private data. Summarize task and outcome. Decisions need context, choice, alternatives, reason and consequences; an empty array is valid if no meaningful decisions occurred. Before every final handoff, check both logs and close the session; further work starts a new session. Before commit/PR run check and include your session files with the work. Do not commit/push unless authorized.
+Start before work for the confirmed participant GitHub handle; git author name is not proof of their handle. Ask if unknown. Do not reuse another chat's session. Write real decisions and actual capability use as it occurs, including this skill and known mode. Installed is not used. Unknown versions stay unknown. An empty decision array is valid; explain it in the result. Record context, choice, alternatives, reason and consequences.
 
-Use exact token totals only with an actual usage source scoped to this session. Never sum cumulative snapshots. When unavailable, leave null; if the user requests estimation, label estimated and document scope and method. Character counts of visible chat cannot measure full billed usage. Wall duration includes waiting; it is not active work time. Do not invent historical timestamps. Mark abandoned sessions interrupted using recovery rules in docs/analytics.md.
+Before final handoff review all three parts and close. Further work starts a new session. Before PR run check and include JSON plus generated pages. After merging concurrent changes rerun render. Do not publish without authorization. Do not store full chats, secrets or private data.
+
+Reported tokens require an actual usage source scoped to this session. Never sum cumulative snapshots. Missing data stays null. Estimates only on explicit request, with method and scope. Visible-text estimates are not billed usage. Duration includes waiting. Do not invent historical ends for abandoned sessions. Preserve original_sources and migration.json: immutable migration evidence, not logs to maintain.
