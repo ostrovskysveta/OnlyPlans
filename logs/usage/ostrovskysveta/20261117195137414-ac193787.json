@@ -1,0 +1,47 @@
+[
+  {
+    "ts": "2026-11-17T19:54:50.085Z",
+    "session_id": "20261117195137414-ac193787",
+    "participant": "ostrovskysveta",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Доработка приблизительного учёта токенов",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:54:50.184Z",
+    "session_id": "20261117195137414-ac193787",
+    "participant": "ostrovskysveta",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Личный журнал",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:54:50.286Z",
+    "session_id": "20261117195137414-ac193787",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Изменения, тесты и GitHub API",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:54:50.385Z",
+    "session_id": "20261117195137414-ac193787",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "apply_patch",
+    "purpose": "Правки скриптов и документации",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-17T19:55:20.134Z",
+    "session_id": "20261117195137414-ac193787",
+    "participant": "ostrovskysveta",
+    "kind": "tool",
+    "name": "mcp__node_repl.js",
+    "purpose": "Передача наблюдаемых текстов через stdin без сохранения переписки",
+    "version": "unknown"
+  }
+]

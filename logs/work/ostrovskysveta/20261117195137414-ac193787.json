@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "id": "20261117195137414-ac193787",
+  "participant": "ostrovskysveta",
+  "task": "Приблизительные токены с методом и охватом вместо неизвестно",
+  "environment": "Codex / Default",
+  "started_at": "2026-11-17T19:51:37.415Z",
+  "ended_at": "2026-11-17T19:55:20.228Z",
+  "status": "closed",
+  "duration_sec": 223,
+  "tokens": {
+    "source": "estimated",
+    "total": 520,
+    "range_low": 432,
+    "range_high": 917,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Добавлена оценка токенов по наблюдаемым фрагментам, не полной телеметрии сессии; исторические оценки ограничены текстом журналов. Три теста прошли. Точные usage приоритетны, исходные архивы сохранены.",
+  "token_samples": [
+    {
+      "id": "user-request",
+      "channel": "input",
+      "chars": 193,
+      "cyrillic_chars": 160,
+      "other_chars": 33,
+      "total": 103,
+      "range_low": 86,
+      "range_high": 177
+    },
+    {
+      "id": "progress-1",
+      "channel": "output",
+      "chars": 236,
+      "cyrillic_chars": 197,
+      "other_chars": 39,
+      "total": 126,
+      "range_low": 106,
+      "range_high": 217
+    },
+    {
+      "id": "progress-2",
+      "channel": "output",
+      "chars": 391,
+      "cyrillic_chars": 321,
+      "other_chars": 70,
+      "total": 207,
+      "range_low": 174,
+      "range_high": 356
+    },
+    {
+      "id": "test-summary",
+      "channel": "tool",
+      "chars": 334,
+      "cyrillic_chars": 0,
+      "other_chars": 334,
+      "total": 84,
+      "range_low": 66,
+      "range_high": 167
+    }
+  ]
+}
