@@ -1,0 +1,57 @@
+[
+  {
+    "at": "2026-11-17T19:09:04.7296098+00:00",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Проверка авторизации и публикация Git",
+    "ts": "2026-11-17T19:09:04.7296098+00:00",
+    "session_id": "20261117T190741170Z-4bdd40e8",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T190741170Z-4bdd40e8"
+  },
+  {
+    "at": "2026-11-17T19:09:04.7434309+00:00",
+    "kind": "tool",
+    "name": "exec_command",
+    "purpose": "Проверка авторизации и публикация Git",
+    "ts": "2026-11-17T19:09:04.7434309+00:00",
+    "session_id": "20261117T190741170Z-4bdd40e8",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T190741170Z-4bdd40e8"
+  },
+  {
+    "at": "2026-11-17T19:09:04.7582589+00:00",
+    "kind": "tool",
+    "name": "write_stdin",
+    "purpose": "Проверка авторизации и публикация Git",
+    "ts": "2026-11-17T19:09:04.7582589+00:00",
+    "session_id": "20261117T190741170Z-4bdd40e8",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T190741170Z-4bdd40e8"
+  },
+  {
+    "at": "2026-11-17T19:09:04.7695751+00:00",
+    "kind": "tool",
+    "name": "request_permissions",
+    "purpose": "Проверка авторизации и публикация Git",
+    "ts": "2026-11-17T19:09:04.7695751+00:00",
+    "session_id": "20261117T190741170Z-4bdd40e8",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T190741170Z-4bdd40e8"
+  },
+  {
+    "at": "2026-11-17T19:09:04.7889878+00:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Рабочий режим",
+    "ts": "2026-11-17T19:09:04.7889878+00:00",
+    "session_id": "20261117T190741170Z-4bdd40e8",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T190741170Z-4bdd40e8"
+  }
+]

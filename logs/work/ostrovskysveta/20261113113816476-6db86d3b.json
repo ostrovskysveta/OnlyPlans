@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "id": "20261113113816476-6db86d3b",
+  "participant": "ostrovskysveta",
+  "task": "Integrate analytics kit and required GitHub check",
+  "environment": "Codex / Default",
+  "started_at": "2026-11-13T11:38:15.1671598+00:00",
+  "ended_at": "2026-11-13T11:41:50.707Z",
+  "status": "closed",
+  "duration_sec": 215.54,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Kit integrated; node lifecycle and coverage regressions pass, legacy start/decision/usage/stop exercised. Paired analytics: 20261113113816476-6db86d3b. Browser publication and branch protection follow; tokens unavailable.\nKit integrated; regression suite passes; legacy script lifecycle exercised. Paired legacy: 20261113T113815167Z-f1a82b8f. Browser publication and protection follow; tokens unavailable.",
+  "imported": true,
+  "source_ids": [
+    "20261113T113815167Z-f1a82b8f",
+    "20261113113816476-6db86d3b"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261113T113815167Z-f1a82b8f/work.json",
+      "sha256": "8999053f01525c2ce83378048042a3cb6e8a75628b632e851e183c8fd814fee4",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261113T113815167Z-f1a82b8f\",\r\n  \"started_at\": \"2026-11-13T11:38:15.1671598+00:00\",\r\n  \"ended_at\": \"2026-11-13T11:41:50.5247464+00:00\",\r\n  \"duration_seconds\": 215.358,\r\n  \"task\": \"Integrate analytics kit, validate scripts and Actions, create PR and require Analytics on main\",\r\n  \"summary\": \"Kit integrated; node lifecycle and coverage regressions pass, legacy start/decision/usage/stop exercised. Paired analytics: 20261113113816476-6db86d3b. Browser publication and branch protection follow; tokens unavailable.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261113T113815167Z-f1a82b8f/decisions.json",
+      "sha256": "509248b187b011b676a6ea3fcc9accf0bf490c31209189925cce7e3bc63b80b5",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-13T11:38:17.4997808+00:00\",\r\n    \"decision_and_context\": \"Preserve existing journals and add paired analytics session\",\r\n    \"alternatives\": \"Replace existing journals\",\r\n    \"consequences\": \"Both formats remain; paired totals must not be summed\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261113T113815167Z-f1a82b8f/usage.json",
+      "sha256": "6c58653cf341df37f690480c8b8a6f3b83d5e92f6482e2110139933141138a15",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-13T11:38:17.5587232+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec\",\r\n    \"purpose\": \"Repository changes and verification\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-13T11:38:17.5800430+00:00\",\r\n    \"kind\": \"skill\",\r\n    \"name\": \"project-journal\",\r\n    \"purpose\": \"Analytics journal\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-13T11:41:49.6464213+00:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Implementation and validation\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-13T11:41:49.7649753+00:00\",\r\n    \"kind\": \"skill\",\r\n    \"name\": \"computer-use\",\r\n    \"purpose\": \"GitHub browser operations\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-13T11:41:49.7893991+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"mcp__cua_repl.js\",\r\n    \"purpose\": \"GitHub browser operations\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-13T11:41:49.8100429+00:00\",\r\n    \"kind\": \"skill\",\r\n    \"name\": \"plugin-management\",\r\n    \"purpose\": \"Check GitHub connector availability\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "analytics/ostrovskysveta/sessions/20261113113816476-6db86d3b.json",
+      "sha256": "6c077ce0dd4a6926653c6f28c2e710befb6b18bc481e0bb36c1dd56bc2967be1",
+      "content": "{\r\n  \"schema_version\": 1,\r\n  \"id\": \"20261113113816476-6db86d3b\",\r\n  \"participant\": \"ostrovskysveta\",\r\n  \"task\": \"Integrate analytics kit and required GitHub check\",\r\n  \"environment\": \"Codex / Default\",\r\n  \"started_at\": \"2026-11-13T11:38:16.488Z\",\r\n  \"ended_at\": \"2026-11-13T11:41:50.707Z\",\r\n  \"status\": \"closed\",\r\n  \"duration_sec\": 214,\r\n  \"tokens\": {\r\n    \"source\": \"unavailable\",\r\n    \"total\": null,\r\n    \"evidence\": null\r\n  },\r\n  \"decisions\": [\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:17.457Z\",\r\n      \"context\": \"Existing mandatory PowerShell journals\",\r\n      \"choice\": \"Preserve both journal protocols and link paired sessions\",\r\n      \"alternatives\": \"Replace old protocol\",\r\n      \"reason\": \"User requires preserving AGENTS instructions\",\r\n      \"consequences\": \"Keep history intact; never add paired durations or token totals\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:41:50.477Z\",\r\n      \"context\": \"Git credential manager denied access; GitHub browser authenticated\",\r\n      \"choice\": \"Upload through GitHub browser\",\r\n      \"alternatives\": \"Stop at local changes\",\r\n      \"reason\": \"User authorized publishing PR and browser can do it\",\r\n      \"consequences\": \"Commit via UI while retaining local verified sources\"\r\n    }\r\n  ],\r\n  \"capabilities\": [\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:16.655Z\",\r\n      \"kind\": \"skill\",\r\n      \"name\": \"project-journal\",\r\n      \"purpose\": \"Maintain work analytics\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:16.816Z\",\r\n      \"kind\": \"mode\",\r\n      \"name\": \"Default\",\r\n      \"purpose\": \"Implementation and verification\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:16.975Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"functions.exec\",\r\n      \"purpose\": \"Inspect, edit and verify repository; GitHub API\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:17.140Z\",\r\n      \"kind\": \"skill\",\r\n      \"name\": \"computer-use\",\r\n      \"purpose\": \"Inspect connected GitHub browser\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:38:17.296Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"mcp__cua_repl.js\",\r\n      \"purpose\": \"Inspect GitHub access\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:41:49.985Z\",\r\n      \"kind\": \"skill\",\r\n      \"name\": \"plugin-management\",\r\n      \"purpose\": \"Check GitHub connector availability\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:41:50.148Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"functions.apply_patch\",\r\n      \"purpose\": \"Edit workflow and add regression test\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-13T11:41:50.312Z\",\r\n      \"kind\": \"plugin\",\r\n      \"name\": \"Plugin Management\",\r\n      \"purpose\": \"Discover GitHub connection\",\r\n      \"version\": \"unknown\"\r\n    }\r\n  ],\r\n  \"decisions_reviewed\": true,\r\n  \"capabilities_reviewed\": true,\r\n  \"result\": \"Kit integrated; regression suite passes; legacy script lifecycle exercised. Paired legacy: 20261113T113815167Z-f1a82b8f. Browser publication and protection follow; tokens unavailable.\"\r\n}\r\n"
+    }
+  ]
+}

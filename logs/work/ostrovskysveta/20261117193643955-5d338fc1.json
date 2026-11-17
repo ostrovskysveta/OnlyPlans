@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "id": "20261117193643955-5d338fc1",
+  "participant": "ostrovskysveta",
+  "task": "Объединение журналов и перенос истории",
+  "environment": "Codex / Default",
+  "started_at": "2026-11-17T19:36:43.8331988+00:00",
+  "ended_at": "2026-11-17T19:41:41.685Z",
+  "status": "closed",
+  "duration_sec": 298,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Перенос выполнен: исходные файлы сохранены внутри новых сессий с контрольными суммами",
+  "imported": true,
+  "source_ids": [
+    "20261117T193643833Z-552fd999",
+    "20261117193643955-5d338fc1"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261117T193643833Z-552fd999/work.json",
+      "sha256": "47d216696a118e86e4881bfdd0887e254a46ceb76f367f11fd7aecbcb5e7eeb8",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261117T193643833Z-552fd999\",\r\n  \"started_at\": \"2026-11-17T19:36:43.8331988+00:00\",\r\n  \"ended_at\": null,\r\n  \"duration_seconds\": null,\r\n  \"task\": \"Объединение журналов: работа, решения и инструменты по участникам\",\r\n  \"summary\": null,\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": null,\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T193643833Z-552fd999/decisions.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "content": "[]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T193643833Z-552fd999/usage.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "content": "[]\r\n"
+    },
+    {
+      "path": "analytics/ostrovskysveta/sessions/20261117193643955-5d338fc1.json",
+      "sha256": "3e21fae75d34f5d6f3aefb6cef18e93765b5287d3dabb20bd293d55177685014",
+      "content": "{\n  \"schema_version\": 1,\n  \"id\": \"20261117193643955-5d338fc1\",\n  \"participant\": \"ostrovskysveta\",\n  \"task\": \"Объединение журналов и перенос истории\",\n  \"environment\": \"Codex / Default\",\n  \"started_at\": \"2026-11-17T19:36:43.957Z\",\n  \"ended_at\": null,\n  \"status\": \"open\",\n  \"duration_sec\": null,\n  \"tokens\": {\n    \"source\": \"unavailable\",\n    \"total\": null,\n    \"evidence\": null\n  },\n  \"decisions\": [],\n  \"capabilities\": [],\n  \"decisions_reviewed\": false,\n  \"capabilities_reviewed\": false,\n  \"result\": null\n}\n"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "id": "20261106T104807764Z-27d96376",
+  "participant": "ostrovskysveta",
+  "task": "Проверка исправления разбора ISO времени",
+  "environment": "unknown (legacy)",
+  "started_at": "2026-11-06T10:48:07.7646932+00:00",
+  "ended_at": "2026-11-06T10:48:07.8310480+00:00",
+  "status": "closed",
+  "duration_sec": 0.067,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": false,
+  "capabilities_reviewed": false,
+  "result": "Проверено сохранение ISO и длительности",
+  "imported": true,
+  "source_ids": [
+    "20261106T104807764Z-27d96376"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261106T104807764Z-27d96376/work.json",
+      "sha256": "030e99c4737f01caf1942edb607b083fb9824a7677f855bc8bd7eabdea8f0253",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261106T104807764Z-27d96376\",\r\n  \"started_at\": \"2026-11-06T10:48:07.7646932+00:00\",\r\n  \"ended_at\": \"2026-11-06T10:48:07.8310480+00:00\",\r\n  \"duration_seconds\": 0.066,\r\n  \"task\": \"Проверка исправления разбора ISO времени\",\r\n  \"summary\": \"Проверено сохранение ISO и длительности\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104807764Z-27d96376/decisions.json",
+      "sha256": "3be582f622714f11bacce0bc58b1788fde1482d40dab3d74f46fc9e44983ea21",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T10:48:07.7941052+00:00\",\r\n    \"decision_and_context\": \"Явный DateKind String предотвращает зависимый от локали разбор времени\",\r\n    \"alternatives\": \"Неявное преобразование дат JSON\",\r\n    \"consequences\": \"Требуется PowerShell 7.5+\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104807764Z-27d96376/usage.json",
+      "sha256": "8a02e269dd3f1dba38cb2fb715a8a7f376cdd8a0aa3bf8c371304ffe23c70fb0",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T10:48:07.8114389+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"exec_command\",\r\n    \"purpose\": \"Проверка длительности и публикация Git\"\r\n  }\r\n]\r\n"
+    }
+  ]
+}

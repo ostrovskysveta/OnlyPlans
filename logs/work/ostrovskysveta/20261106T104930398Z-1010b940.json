@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "id": "20261106T104930398Z-1010b940",
+  "participant": "ostrovskysveta",
+  "task": "Восстановление входа GitHub и отправка коммитов",
+  "environment": "unknown (legacy)",
+  "started_at": "2026-11-06T10:49:30.3989043+00:00",
+  "ended_at": "2026-11-06T10:49:56.1286163+00:00",
+  "status": "closed",
+  "duration_sec": 25.73,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": false,
+  "capabilities_reviewed": false,
+  "result": "Выявлен отказ доступа среды к хранилищу Windows. Вход и push не подтверждены. Скиллы и плагины не использовались.",
+  "imported": true,
+  "source_ids": [
+    "20261106T104930398Z-1010b940"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261106T104930398Z-1010b940/work.json",
+      "sha256": "25ddae47a8d2e1e14e47d11979a777e9120be7f8214772a1aeffac69c483e6dc",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261106T104930398Z-1010b940\",\r\n  \"started_at\": \"2026-11-06T10:49:30.3989043+00:00\",\r\n  \"ended_at\": \"2026-11-06T10:49:56.1286163+00:00\",\r\n  \"duration_seconds\": 25.73,\r\n  \"task\": \"Восстановление входа GitHub и отправка коммитов\",\r\n  \"summary\": \"Выявлен отказ доступа среды к хранилищу Windows. Вход и push не подтверждены. Скиллы и плагины не использовались.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104930398Z-1010b940/decisions.json",
+      "sha256": "8f1ae428d2cb2104997702e780ba14302dc080a6875d9e794ec4df088c5914b6",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T10:49:56.1174215+00:00\",\r\n    \"decision_and_context\": \"Продолжить авторизацию в обычном PowerShell: среда агента получает Access denied от хранилища Windows\",\r\n    \"alternatives\": \"Повторная авторизация внутри ограниченной среды\",\r\n    \"consequences\": \"Требуется локальное действие пользователя; учётные данные не извлекаются\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T104930398Z-1010b940/usage.json",
+      "sha256": "3fbe3803cbbcc205d65ce8ca8a46bdf81a1f3d38775af2f50c5cbeb380320c35",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T10:49:56.0489960+00:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Диагностика входа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-06T10:49:56.1059415+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec / exec_command\",\r\n    \"purpose\": \"Проверка настроек Git и доступности Windows Credential Manager\"\r\n  }\r\n]\r\n"
+    }
+  ]
+}

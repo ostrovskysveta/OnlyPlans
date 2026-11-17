@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "id": "20261117T190346214Z-20989e7f",
+  "participant": "ostrovskysveta",
+  "task": "Авторизация GitHub и отправка ветки",
+  "environment": "unknown (legacy)",
+  "started_at": "2026-11-17T19:03:46.2140321+00:00",
+  "ended_at": "2026-11-17T19:06:31.1796520+00:00",
+  "status": "closed",
+  "duration_sec": 164.965,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": false,
+  "capabilities_reviewed": false,
+  "result": "Вход запущен; ожидается подтверждение в GitHub пользователем. Публикация ещё не выполнена.",
+  "imported": true,
+  "source_ids": [
+    "20261117T190346214Z-20989e7f"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261117T190346214Z-20989e7f/work.json",
+      "sha256": "d204355f79e57adb4ba0500590dae7b260a92679351138a6a1763c466152ba68",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261117T190346214Z-20989e7f\",\r\n  \"started_at\": \"2026-11-17T19:03:46.2140321+00:00\",\r\n  \"ended_at\": \"2026-11-17T19:06:31.1796520+00:00\",\r\n  \"duration_seconds\": 164.966,\r\n  \"task\": \"Авторизация GitHub и отправка ветки\",\r\n  \"summary\": \"Вход запущен; ожидается подтверждение в GitHub пользователем. Публикация ещё не выполнена.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T190346214Z-20989e7f/decisions.json",
+      "sha256": "a41282b503e7626ad1e4b410b4415d3d8a20ff5ddd85edf9ffc7e617a8c6cabe",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.0152684+00:00\",\r\n    \"decision_and_context\": \"После отказа системного хранилища запущен device login с DPAPI-хранилищем вне репозитория; ожидается подтверждение пользователя\",\r\n    \"alternatives\": \"Повторный доступ к системному хранилищу, ручная передача токена\",\r\n    \"consequences\": \"Пароль и токены не выводятся; требуется подтверждение GitHub пользователем\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T190346214Z-20989e7f/usage.json",
+      "sha256": "26939b2d84546e158d6ef20e368d8b632ed4785e5b61a9a4d630e258479061df",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.0855562+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec\",\r\n    \"purpose\": \"Авторизация GitHub и диагностика доступа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.1000164+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.request_user_input_async\",\r\n    \"purpose\": \"Авторизация GitHub и диагностика доступа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.1151288+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"exec_command\",\r\n    \"purpose\": \"Авторизация GitHub и диагностика доступа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.1280456+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"write_stdin\",\r\n    \"purpose\": \"Авторизация GitHub и диагностика доступа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.1426416+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"request_permissions\",\r\n    \"purpose\": \"Авторизация GitHub и диагностика доступа\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:06:31.1658152+00:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Рабочий режим\"\r\n  }\r\n]\r\n"
+    }
+  ]
+}

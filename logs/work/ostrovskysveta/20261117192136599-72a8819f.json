@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "id": "20261117192136599-72a8819f",
+  "participant": "ostrovskysveta",
+  "task": "Синхронизация PR #3 с main; аналитика стала доступна после merge",
+  "environment": "Codex / unknown",
+  "started_at": "2026-11-17T19:17:46.9060493+00:00",
+  "ended_at": "2026-11-17T19:21:58.3422646+00:00",
+  "status": "closed",
+  "duration_sec": 251.436,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Main объединён без текстовых конфликтов; тесты пройдены; подготовлено обновление PR. Парная analytics-сессия 20261117192136599-72a8819f, начата после получения скрипта из main.\nMerge выполнен; тесты и whitespace check пройдены. Парная logs-сессия 20261117T191746906Z-09801d40. Аналитика начата после получения скрипта из main; точные токены недоступны.",
+  "imported": true,
+  "source_ids": [
+    "20261117T191746906Z-09801d40",
+    "20261117192136599-72a8819f"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261117T191746906Z-09801d40/work.json",
+      "sha256": "996a346f7b4da377f94b8920197eeaea5216ca7e3687d1cada49ee0dbca68431",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261117T191746906Z-09801d40\",\r\n  \"started_at\": \"2026-11-17T19:17:46.9060493+00:00\",\r\n  \"ended_at\": \"2026-11-17T19:21:58.3422646+00:00\",\r\n  \"duration_seconds\": 251.436,\r\n  \"task\": \"Разрешение конфликтов PR #3\",\r\n  \"summary\": \"Main объединён без текстовых конфликтов; тесты пройдены; подготовлено обновление PR. Парная analytics-сессия 20261117192136599-72a8819f, начата после получения скрипта из main.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T191746906Z-09801d40/decisions.json",
+      "sha256": "86eee956a46377a386a9d7051187188b6072ea83036dae0f8fe9eddc06249659",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-17T19:21:58.1864565+00:00\",\r\n    \"decision_and_context\": \"Влить актуальный main в ветку PR #3, сохранив продуктовый контекст и добавив обязательный analytics журнал\",\r\n    \"alternatives\": \"Rebase с переписыванием опубликованной истории\",\r\n    \"consequences\": \"История сохранена, изменения main и требования CI включены\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261117T191746906Z-09801d40/usage.json",
+      "sha256": "7ca1512fcd4f5e297763dc8d684016b719bae480ee21c0a4d39b4705e04bb225",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-17T19:18:52.6762343+00:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Разрешение конфликтов PR\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:18:53.2192935+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec\",\r\n    \"purpose\": \"Запуск команд git и протокола журналирования\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:18:53.7181767+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"exec_command\",\r\n    \"purpose\": \"Чтение файлов, git и ведение сессии\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:21:58.0675978+00:00\",\r\n    \"kind\": \"skill\",\r\n    \"name\": \"project-journal\",\r\n    \"purpose\": \"Синхронизация PR и проверка результата\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:21:58.1356106+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.wait\",\r\n    \"purpose\": \"Синхронизация PR и проверка результата\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:21:58.1511047+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"write_stdin\",\r\n    \"purpose\": \"Синхронизация PR и проверка результата\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-17T19:21:58.1640637+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"web__run\",\r\n    \"purpose\": \"Синхронизация PR и проверка результата\"\r\n  }\r\n]\r\n"
+    },
+    {
+      "path": "analytics/ostrovskysveta/sessions/20261117192136599-72a8819f.json",
+      "sha256": "ba16c2cc5c7b82ccf06d23df16b2f65f34bc5c4bb296881081cb6af691895a79",
+      "content": "{\r\n  \"schema_version\": 1,\r\n  \"id\": \"20261117192136599-72a8819f\",\r\n  \"participant\": \"ostrovskysveta\",\r\n  \"task\": \"Синхронизация PR #3 с main; аналитика стала доступна после merge\",\r\n  \"environment\": \"Codex / unknown\",\r\n  \"started_at\": \"2026-11-17T19:21:36.601Z\",\r\n  \"ended_at\": \"2026-11-17T19:21:58.314Z\",\r\n  \"status\": \"closed\",\r\n  \"duration_sec\": 22,\r\n  \"tokens\": {\r\n    \"source\": \"unavailable\",\r\n    \"total\": null,\r\n    \"evidence\": null\r\n  },\r\n  \"decisions\": [\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:58.247Z\",\r\n      \"context\": \"PR #3 требует синхронизации с main\",\r\n      \"choice\": \"Merge main без переписывания истории\",\r\n      \"alternatives\": \"Rebase\",\r\n      \"reason\": \"Сохранение опубликованных коммитов\",\r\n      \"consequences\": \"Контекст продукта сохранён, аналитика main включена\"\r\n    }\r\n  ],\r\n  \"capabilities\": [\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.442Z\",\r\n      \"kind\": \"mode\",\r\n      \"name\": \"Default\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.515Z\",\r\n      \"kind\": \"skill\",\r\n      \"name\": \"project-journal\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.581Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"functions.exec\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.649Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"exec_command\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.722Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"functions.wait\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.797Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"write_stdin\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    },\r\n    {\r\n      \"ts\": \"2026-11-17T19:21:57.864Z\",\r\n      \"kind\": \"tool\",\r\n      \"name\": \"web__run\",\r\n      \"purpose\": \"Синхронизация PR, проверка GitHub и журналов\",\r\n      \"version\": \"unknown\"\r\n    }\r\n  ],\r\n  \"decisions_reviewed\": true,\r\n  \"capabilities_reviewed\": true,\r\n  \"result\": \"Merge выполнен; тесты и whitespace check пройдены. Парная logs-сессия 20261117T191746906Z-09801d40. Аналитика начата после получения скрипта из main; точные токены недоступны.\"\r\n}\r\n"
+    }
+  ]
+}

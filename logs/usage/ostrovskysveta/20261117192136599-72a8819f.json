@@ -1,0 +1,149 @@
+[
+  {
+    "at": "2026-11-17T19:18:52.6762343+00:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Разрешение конфликтов PR",
+    "ts": "2026-11-17T19:18:52.6762343+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:18:53.2192935+00:00",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Запуск команд git и протокола журналирования",
+    "ts": "2026-11-17T19:18:53.2192935+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:18:53.7181767+00:00",
+    "kind": "tool",
+    "name": "exec_command",
+    "purpose": "Чтение файлов, git и ведение сессии",
+    "ts": "2026-11-17T19:18:53.7181767+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:21:58.0675978+00:00",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Синхронизация PR и проверка результата",
+    "ts": "2026-11-17T19:21:58.0675978+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:21:58.1356106+00:00",
+    "kind": "tool",
+    "name": "functions.wait",
+    "purpose": "Синхронизация PR и проверка результата",
+    "ts": "2026-11-17T19:21:58.1356106+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:21:58.1511047+00:00",
+    "kind": "tool",
+    "name": "write_stdin",
+    "purpose": "Синхронизация PR и проверка результата",
+    "ts": "2026-11-17T19:21:58.1511047+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "at": "2026-11-17T19:21:58.1640637+00:00",
+    "kind": "tool",
+    "name": "web__run",
+    "purpose": "Синхронизация PR и проверка результата",
+    "ts": "2026-11-17T19:21:58.1640637+00:00",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261117T191746906Z-09801d40"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.442Z",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.515Z",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.581Z",
+    "kind": "tool",
+    "name": "functions.exec",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.649Z",
+    "kind": "tool",
+    "name": "exec_command",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.722Z",
+    "kind": "tool",
+    "name": "functions.wait",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.797Z",
+    "kind": "tool",
+    "name": "write_stdin",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  },
+  {
+    "ts": "2026-11-17T19:21:57.864Z",
+    "kind": "tool",
+    "name": "web__run",
+    "purpose": "Синхронизация PR, проверка GitHub и журналов",
+    "version": "unknown",
+    "session_id": "20261117192136599-72a8819f",
+    "participant": "ostrovskysveta",
+    "source_session_id": "20261117192136599-72a8819f"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "at": "2026-11-06T13:47:44.5448079+03:00",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Настройка репозитория",
+    "ts": "2026-11-06T13:47:44.5448079+03:00",
+    "session_id": "20261106T104744464Z-ae260e40",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261106T104744464Z-ae260e40"
+  },
+  {
+    "at": "2026-11-06T10:47:44.5638760+00:00",
+    "kind": "tool",
+    "name": "functions.exec / exec_command / apply_patch / request_permissions / request_user_input_async",
+    "purpose": "Создание файлов, проверка Git, сетевой доступ и уточнение автора; включая вызовы до начала учёта",
+    "ts": "2026-11-06T10:47:44.5638760+00:00",
+    "session_id": "20261106T104744464Z-ae260e40",
+    "participant": "ostrovskysveta",
+    "version": "unknown",
+    "source_session_id": "20261106T104744464Z-ae260e40"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "id": "20261106T105547110Z-010604eb",
+  "participant": "ostrovskysveta",
+  "task": "Повторная отправка OnlyPlans в GitHub; первая попытка до начала измерения",
+  "environment": "unknown (legacy)",
+  "started_at": "2026-11-06T10:55:47.1109403+00:00",
+  "ended_at": "2026-11-06T10:55:56.2838003+00:00",
+  "status": "closed",
+  "duration_sec": 9.173,
+  "tokens": {
+    "source": "unavailable",
+    "total": null,
+    "evidence": null
+  },
+  "decisions_reviewed": false,
+  "capabilities_reviewed": false,
+  "result": "Push не выполнен: запуск credential-manager блокируется ограничениями среды (0xC0000022). Новых решений не было; скиллы и плагины не применялись.",
+  "imported": true,
+  "source_ids": [
+    "20261106T105547110Z-010604eb"
+  ],
+  "migration_note": "Explicitly linked records merged; time is the union of their interval, tokens chosen once (reported preferred). All original fields and texts retained below. Missing legacy decision fields marked unknown, not invented.",
+  "original_sources": [
+    {
+      "path": "logs/ostrovskysveta/20261106T105547110Z-010604eb/work.json",
+      "sha256": "3d3d0f9daa43dfae345a5ea932d23541e31c59adab31f18622983245b8d2961f",
+      "content": "{\r\n  \"person\": \"ostrovskysveta\",\r\n  \"session_id\": \"20261106T105547110Z-010604eb\",\r\n  \"started_at\": \"2026-11-06T10:55:47.1109403+00:00\",\r\n  \"ended_at\": \"2026-11-06T10:55:56.2838003+00:00\",\r\n  \"duration_seconds\": 9.173,\r\n  \"task\": \"Повторная отправка OnlyPlans в GitHub; первая попытка до начала измерения\",\r\n  \"summary\": \"Push не выполнен: запуск credential-manager блокируется ограничениями среды (0xC0000022). Новых решений не было; скиллы и плагины не применялись.\",\r\n  \"input_tokens\": null,\r\n  \"output_tokens\": null,\r\n  \"token_source\": \"\",\r\n  \"token_unavailable_reason\": \"Environment has not supplied exact session usage\"\r\n}\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T105547110Z-010604eb/decisions.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "content": "[]\r\n"
+    },
+    {
+      "path": "logs/ostrovskysveta/20261106T105547110Z-010604eb/usage.json",
+      "sha256": "08ac93c789509ce8ce359d327d7ffc85130a84a39d03e5c46fa6347ad1900ced",
+      "content": "[\r\n  {\r\n    \"at\": \"2026-11-06T10:55:56.2132292+00:00\",\r\n    \"kind\": \"mode\",\r\n    \"name\": \"Default\",\r\n    \"purpose\": \"Повторная отправка\"\r\n  },\r\n  {\r\n    \"at\": \"2026-11-06T10:55:56.2723077+00:00\",\r\n    \"kind\": \"tool\",\r\n    \"name\": \"functions.exec / exec_command / request_permissions\",\r\n    \"purpose\": \"Git push и разрешение сетевого доступа\"\r\n  }\r\n]\r\n"
+    }
+  ]
+}
