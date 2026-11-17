@@ -1,7 +1,7 @@
 @startuml
-' OnlyPlans — Use Case diagram (v3)
-' Роли: Редактор плана (Продакт, Тимлид, БА) — создают и редактируют план;
-' Сотрудник — смотрит свои работы; Руководитель/Стейкхолдер — view-only. См. docs/ba/02-user-stories.md
+' OnlyPlans — Use Case diagram (v4)
+' Роли: Владелец (полный контроль), Редактор (Продакт, Тимлид, БА) — создают и редактируют план;
+' Читатель (стейкхолдеры, руководство, сотрудники) — view-only. См. docs/ba/02-user-stories.md
 left to right direction
 skinparam actorStyle awesome
 skinparam packageStyle rectangle
@@ -10,20 +10,20 @@ skinparam linetype ortho
 skinparam nodesep 45
 skinparam ranksep 90
 
-actor "Редактор плана\n(Продакт, Тимлид, БА)" as ED
-actor "Сотрудник\n(разработчик/аналитик)" as EMP
-actor "Руководитель / Стейкхолдер" as STK
+actor "Владелец" as OWN
+actor "Редактор\n(Продакт, Тимлид, БА)" as ED
+actor "Читатель\n(стейкхолдер, сотрудник)" as STK
 
 rectangle "OnlyPlans" {
 
   ' Discovery
-  usecase "UC-1 Создать инициативу" as U1
-  usecase "UC-2 Настроить этапы команды" as U2
-  usecase "UC-3 Отследить статусы инициатив" as U3
+  usecase "UC-1 Создать фичу/исследование" as U1
+  usecase "UC-2 Настроить состав работ" as U2
+  usecase "UC-3 Отследить статусы" as U3
 
   ' Delivery / планирование
-  usecase "UC-4 Спланировать неделю (delivery)" as U4
-  usecase "UC-5 Передвинуть задачу по этапам" as U5
+  usecase "UC-4 Спланировать неделю" as U4
+  usecase "UC-5 Передвинуть задачу по статусам" as U5
   usecase "UC-7 Настроить пресеты длительностей" as U7
 
   ' Календарь
@@ -48,13 +48,33 @@ rectangle "OnlyPlans" {
   ' Просмотр
   usecase "UC-8 Просмотреть роадмап (view-only)" as U8
 
+  ' Зависимости
+  usecase "UC-14 Связывать зависимости" as U14
+
   ' Связи между юзкейсами
-  U1 ..> U2 : включает (этапы)
+  U1 ..> U2 : включает (состав работ)
   U4 ..> U7 : включает (пресеты)
   U6b ..> U6a : использует
 }
 
-' Редактор плана: все юзкейсы (полный CRUD)
+' Владелец: полный контроль (+ всё, что редактор)
+OWN --> U1
+OWN --> U2
+OWN --> U3
+OWN --> U4
+OWN --> U5
+OWN --> U6a
+OWN --> U6b
+OWN --> U7
+OWN --> U8
+OWN --> U9
+OWN --> U10
+OWN --> U11
+OWN --> U12
+OWN --> U13
+OWN --> U14
+
+' Редактор: создаёт и редактирует план (полный CRUD)
 ED --> U1
 ED --> U2
 ED --> U3
@@ -69,23 +89,15 @@ ED --> U10
 ED --> U11
 ED --> U12
 ED --> U13
+ED --> U14
 
-' Сотрудник: смотрит свои работы (+ статус своих задач, своя нагрузка)
-EMP --> U3
-EMP --> U5
-EMP --> U6a
-EMP --> U6b
-EMP --> U8
-EMP --> U10
-EMP --> U11
-EMP --> U12
-EMP --> U13
-
-' Руководитель / Стейкхолдер: view-only
+' Читатель: view-only (+ сотрудник обновляет статус своих задач, своя нагрузка)
 STK --> U3
+STK --> U5
 STK --> U6a
 STK --> U6b
 STK --> U8
+STK --> U10
 STK --> U11
 STK --> U12
 
