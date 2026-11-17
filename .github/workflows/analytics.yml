@@ -1,0 +1,32 @@
+name: Analytics
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main, master]
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Analytics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test journal commands and coverage rules
+        run: node --test scripts/journal.test.mjs
+      - name: Validate logs and PR coverage
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            node scripts/journal.mjs check "$BASE_SHA"
+          else
+            node scripts/journal.mjs check
+          fi
+      - name: Publish analytics summary
+        run: node scripts/journal.mjs report >> "$GITHUB_STEP_SUMMARY"
