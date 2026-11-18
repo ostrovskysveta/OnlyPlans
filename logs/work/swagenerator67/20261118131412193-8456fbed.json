@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "id": "20261118131412193-8456fbed",
+  "participant": "swagenerator67",
+  "task": "Отправить конкурентное исследование в OnlyPlans и открыть PR",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T13:14:12.196Z",
+  "ended_at": "2026-11-18T13:14:54.674Z",
+  "status": "interrupted",
+  "duration_sec": 42,
+  "tokens": {
+    "source": "estimated",
+    "total": 218,
+    "range_low": 176,
+    "range_high": 401,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Проверена возможность публикации в OnlyPlans. GitHub вернул 403 при создании ветки. Подготовлены локальные изменения для отправки из авторизованного клона.",
+  "token_samples": [
+    {
+      "id": "request-push",
+      "channel": "input",
+      "chars": 20,
+      "cyrillic_chars": 16,
+      "other_chars": 4,
+      "total": 11,
+      "range_low": 8,
+      "range_high": 18
+    },
+    {
+      "id": "request-pr",
+      "channel": "input",
+      "chars": 12,
+      "cyrillic_chars": 7,
+      "other_chars": 5,
+      "total": 6,
+      "range_low": 4,
+      "range_high": 10
+    },
+    {
+      "id": "branch-error",
+      "channel": "tool",
+      "chars": 378,
+      "cyrillic_chars": 0,
+      "other_chars": 378,
+      "total": 95,
+      "range_low": 75,
+      "range_high": 189
+    },
+    {
+      "id": "final-reply-draft",
+      "channel": "output",
+      "chars": 211,
+      "cyrillic_chars": 156,
+      "other_chars": 55,
+      "total": 106,
+      "range_low": 89,
+      "range_high": 184
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "ts": "2026-11-18T13:51:11.237Z",
+    "session_id": "20261118135058480-81343713",
+    "participant": "swagenerator67",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Проверка доступа к репозиторию",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:51:12.128Z",
+    "session_id": "20261118135058480-81343713",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Запись результата проверки",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:51:13.062Z",
+    "session_id": "20261118135058480-81343713",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "GitHub",
+    "purpose": "Проверка установки, репозиториев и создания ветки",
+    "version": "unknown"
+  }
+]

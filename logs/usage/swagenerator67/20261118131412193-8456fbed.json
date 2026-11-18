@@ -1,0 +1,38 @@
+[
+  {
+    "ts": "2026-11-18T13:14:51.211Z",
+    "session_id": "20261118131412193-8456fbed",
+    "participant": "swagenerator67",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Публикация готового исследования",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:14:51.748Z",
+    "session_id": "20261118131412193-8456fbed",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Журнал попытки публикации",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:14:52.027Z",
+    "session_id": "20261118131412193-8456fbed",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "GitHub",
+    "purpose": "Проверка доступа и попытка создания ветки",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:14:52.317Z",
+    "session_id": "20261118131412193-8456fbed",
+    "participant": "swagenerator67",
+    "kind": "tool",
+    "name": "git / Node.js",
+    "purpose": "Подготовка и проверка патча и журнала",
+    "version": "unknown"
+  }
+]

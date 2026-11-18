@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "20261118140548517-dbc16f4d",
+  "participant": "swagenerator67",
+  "task": "Повторная публикация исследования OnlyPlans",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T14:05:48.524Z",
+  "ended_at": "2026-11-18T14:06:18.656Z",
+  "status": "closed",
+  "duration_sec": 30,
+  "tokens": {
+    "source": "estimated",
+    "total": 79,
+    "range_low": 63,
+    "range_high": 137,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "GitHub принял создание ветки, документ и журналы подготовлены к отправке в PR. Новых продуктовых решений не было.",
+  "token_samples": [
+    {
+      "id": "user-request",
+      "channel": "input",
+      "chars": 15,
+      "cyrillic_chars": 13,
+      "other_chars": 2,
+      "total": 9,
+      "range_low": 6,
+      "range_high": 14
+    },
+    {
+      "id": "github-branch",
+      "channel": "tool",
+      "chars": 46,
+      "cyrillic_chars": 0,
+      "other_chars": 46,
+      "total": 12,
+      "range_low": 9,
+      "range_high": 23
+    },
+    {
+      "id": "final-reply-draft",
+      "channel": "output",
+      "chars": 116,
+      "cyrillic_chars": 83,
+      "other_chars": 33,
+      "total": 58,
+      "range_low": 48,
+      "range_high": 100
+    }
+  ]
+}
