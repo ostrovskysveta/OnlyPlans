@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "20261119085142647-ba6a2026",
+  "participant": "krokharina",
+  "task": "Подготовка закрытой рабочей сессии для PR #6 с девятью документами бизнес-анализа",
+  "environment": "ChatGPT / GPT-6 / GitHub connector",
+  "started_at": "2026-11-19T08:51:42.647Z",
+  "ended_at": "2026-11-19T08:52:27.650Z",
+  "status": "closed",
+  "duration_sec": 45,
+  "tokens": {
+    "source": "estimated",
+    "total": 436,
+    "range_low": 366,
+    "range_high": 765,
+    "scope": "journal_only",
+    "method": "characters-v1",
+    "evidence": "Только сохранившиеся тексты задачи, результата, решений и инструментов. Исходная переписка недоступна; расход всей сессии по этим данным оценить нельзя. Архивные копии original_sources не учитываются."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Проверен состав PR #6: 9 файлов docs/ba; оформлены журналы работы, решений и использованных инструментов для проверки Analytics. Объединение с main выполняется отдельно."
+}
