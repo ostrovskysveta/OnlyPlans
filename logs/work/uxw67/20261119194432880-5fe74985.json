@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "id": "20261119194432880-5fe74985",
+  "participant": "uxw67",
+  "task": "Ретроспективное восстановление доступной истории проекта «Дашуха сиксевеееен» и подготовка объединённого БА к ревью",
+  "environment": "ChatGPT / GPT-6",
+  "started_at": "2026-11-19T19:44:32.883Z",
+  "ended_at": "2026-11-19T19:44:32.899Z",
+  "status": "closed",
+  "duration_sec": 0,
+  "tokens": {
+    "source": "estimated",
+    "total": 4403,
+    "range_low": 3558,
+    "range_high": 8551,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Восстановлена доступная история проекта за 13–19 ноября 2026 года, включая персонажа, GitHub, БА/CJM, Figma и согласованные блоки объединённого БА. Исторические сессии не зарегистрированы своевременно; точные границы и расход неизвестны. Оценка текущей сессии частичная, только явно учтённые тексты. Три новых поджурнала проверены функцией штатного скрипта; полного локального check не было из-за DNS и лимита вызовов GitHub. Полную проверку должна выполнить CI Analytics.",
+  "token_samples": [
+    {
+      "id": "current-input",
+      "channel": "input",
+      "chars": 105,
+      "cyrillic_chars": 88,
+      "other_chars": 17,
+      "total": 57,
+      "range_low": 47,
+      "range_high": 97
+    },
+    {
+      "id": "current-commentary",
+      "channel": "output",
+      "chars": 173,
+      "cyrillic_chars": 134,
+      "other_chars": 39,
+      "total": 89,
+      "range_low": 74,
+      "range_high": 154
+    },
+    {
+      "id": "tool-journal-script",
+      "channel": "tool",
+      "chars": 12579,
+      "cyrillic_chars": 522,
+      "other_chars": 12057,
+      "total": 3322,
+      "range_low": 2672,
+      "range_high": 6551
+    },
+    {
+      "id": "tool-token-script",
+      "channel": "tool",
+      "chars": 2545,
+      "cyrillic_chars": 549,
+      "other_chars": 1996,
+      "total": 822,
+      "range_low": 673,
+      "range_high": 1547
+    },
+    {
+      "id": "tool-git-dns",
+      "channel": "tool",
+      "chars": 119,
+      "cyrillic_chars": 0,
+      "other_chars": 119,
+      "total": 30,
+      "range_low": 23,
+      "range_high": 60
+    },
+    {
+      "id": "planned-final-core",
+      "channel": "output",
+      "chars": 157,
+      "cyrillic_chars": 127,
+      "other_chars": 30,
+      "total": 83,
+      "range_low": 69,
+      "range_high": 142
+    }
+  ]
+}
