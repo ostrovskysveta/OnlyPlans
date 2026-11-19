@@ -1,0 +1,42 @@
+[
+  {
+    "ts": "2026-11-19T13:31:17.969Z",
+    "session_id": "20261119132841512-830b19c7",
+    "participant": "krokharina",
+    "context": "Пересмотр предметной модели OnlyPlans",
+    "choice": "Использовать Idea → Epic → Stage → Task",
+    "alternatives": "Сохранить Initiative → Feature → Stage → Task",
+    "reason": "Новая модель согласована при обсуждении требований",
+    "consequences": "Переработаны User Stories, сценарии и ER-модель"
+  },
+  {
+    "ts": "2026-11-19T13:31:25.542Z",
+    "session_id": "20261119132841512-830b19c7",
+    "participant": "krokharina",
+    "context": "Дублирование требований в документации",
+    "choice": "Перенести бизнес-правила в User Stories и Acceptance Criteria",
+    "alternatives": "Оставить отдельный файл Business Rules",
+    "reason": "Упростить сопровождение требований и исключить дублирование",
+    "consequences": "Удалён 06-business-rules.md"
+  },
+  {
+    "ts": "2026-11-19T13:31:34.087Z",
+    "session_id": "20261119132841512-830b19c7",
+    "participant": "krokharina",
+    "context": "Планирование сроков Epic",
+    "choice": "Каждый Stage имеет собственную длительность, Task обязательно принадлежит Stage",
+    "alternatives": "Рассчитывать длительность Stage по задачам",
+    "reason": "Согласована независимая длительность этапов",
+    "consequences": "Обновлены критерии приёмки и ER-модель"
+  },
+  {
+    "ts": "2026-11-19T13:31:42.185Z",
+    "session_id": "20261119132841512-830b19c7",
+    "participant": "krokharina",
+    "context": "Определение состава MVP",
+    "choice": "Включить магнитное планирование с предпросмотром; пропорциональный пересчёт задач оставить на Post-MVP",
+    "alternatives": "Включить весь алгоритм в MVP",
+    "reason": "Сократить сложность первой версии",
+    "consequences": "Обновлены Vision and Scope и User Stories"
+  }
+]
