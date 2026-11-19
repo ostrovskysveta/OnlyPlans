@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "id": "20261119132841512-830b19c7",
+  "participant": "krokharina",
+  "task": "Рефакторинг БА после общего обсуждения",
+  "environment": "ChatGPT GPT-6",
+  "started_at": "2026-11-19T13:28:41.517Z",
+  "ended_at": "2026-11-19T13:31:49.002Z",
+  "status": "closed",
+  "duration_sec": 187,
+  "tokens": {
+    "source": "estimated",
+    "total": 564,
+    "range_low": 474,
+    "range_high": 988,
+    "scope": "journal_only",
+    "method": "characters-v1",
+    "evidence": "Только сохранившиеся тексты задачи, результата, решений и инструментов. Исходная переписка недоступна; расход всей сессии по этим данным оценить нельзя. Архивные копии original_sources не учитываются."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Переработаны семь BA-документов, удалены два устаревших файла, подготовлен PR #8"
+}
