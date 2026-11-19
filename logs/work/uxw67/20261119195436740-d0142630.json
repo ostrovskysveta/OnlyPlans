@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "id": "20261119195436740-d0142630",
+  "participant": "uxw67",
+  "task": "Разделение журналов и бизнес-анализа; уточнение названия истории работы",
+  "environment": "ChatGPT / GPT-6",
+  "started_at": "2026-11-19T19:54:36.743Z",
+  "ended_at": "2026-11-19T19:54:36.765Z",
+  "status": "closed",
+  "duration_sec": 0,
+  "tokens": {
+    "source": "estimated",
+    "total": 128,
+    "range_low": 102,
+    "range_high": 230,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Ретроспективная запись переименована в «Даша — история работы»; подготовлен отдельный набор файлов журналов для ветки logs/uxw67. Старые решения и сведения об инструментах сохранены. Проверены обе сессии участника и сгенерированы читаемые страницы. Полный локальный check репозитория недоступен из-за DNS; требуется CI Analytics. Оценка токенов охватывает только наблюдавшиеся текстовые фрагменты текущего действия.",
+  "token_samples": [
+    {
+      "id": "input-1",
+      "channel": "input",
+      "chars": 56,
+      "cyrillic_chars": 45,
+      "other_chars": 11,
+      "total": 30,
+      "range_low": 24,
+      "range_high": 51
+    },
+    {
+      "id": "commentary-1",
+      "channel": "output",
+      "chars": 115,
+      "cyrillic_chars": 88,
+      "other_chars": 27,
+      "total": 59,
+      "range_low": 49,
+      "range_high": 102
+    },
+    {
+      "id": "git-dns",
+      "channel": "tool",
+      "chars": 119,
+      "cyrillic_chars": 0,
+      "other_chars": 119,
+      "total": 30,
+      "range_low": 23,
+      "range_high": 60
+    },
+    {
+      "id": "branch-result",
+      "channel": "tool",
+      "chars": 34,
+      "cyrillic_chars": 0,
+      "other_chars": 34,
+      "total": 9,
+      "range_low": 6,
+      "range_high": 17
+    }
+  ]
+}
