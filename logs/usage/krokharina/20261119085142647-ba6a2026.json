@@ -1,0 +1,29 @@
+[
+  {
+    "ts": "2026-11-19T08:52:27.650Z",
+    "session_id": "20261119085142647-ba6a2026",
+    "participant": "krokharina",
+    "kind": "model",
+    "name": "GPT-6",
+    "purpose": "Проверка требований журнала и подготовка записей.",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-19T08:52:27.650Z",
+    "session_id": "20261119085142647-ba6a2026",
+    "participant": "krokharina",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Соблюдение правил журнала OnlyPlans по .agents/skills/project-journal/SKILL.md.",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-19T08:52:27.650Z",
+    "session_id": "20261119085142647-ba6a2026",
+    "participant": "krokharina",
+    "kind": "mcp",
+    "name": "GitHub connector",
+    "purpose": "Чтение AGENTS.md, скриптов, статуса PR и запись журналов в ветку.",
+    "version": "unknown"
+  }
+]
