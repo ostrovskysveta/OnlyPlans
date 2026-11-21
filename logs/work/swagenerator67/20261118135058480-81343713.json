@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "20261118135058480-81343713",
+  "participant": "swagenerator67",
+  "task": "Проверить обновлённый доступ к OnlyPlans и открыть PR",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T13:50:58.483Z",
+  "ended_at": "2026-11-18T13:51:15.963Z",
+  "status": "interrupted",
+  "duration_sec": 17,
+  "tokens": {
+    "source": "estimated",
+    "total": 251,
+    "range_low": 205,
+    "range_high": 458,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "GitHub вернул 403 при создании ветки. Доступ к репозиторию через приложение не подтверждён. Новых продуктовых решений не было.",
+  "token_samples": [
+    {
+      "id": "user-request",
+      "channel": "input",
+      "chars": 68,
+      "cyrillic_chars": 55,
+      "other_chars": 13,
+      "total": 36,
+      "range_low": 30,
+      "range_high": 62
+    },
+    {
+      "id": "github-response",
+      "channel": "tool",
+      "chars": 378,
+      "cyrillic_chars": 0,
+      "other_chars": 378,
+      "total": 95,
+      "range_low": 75,
+      "range_high": 189
+    },
+    {
+      "id": "final-reply",
+      "channel": "output",
+      "chars": 232,
+      "cyrillic_chars": 181,
+      "other_chars": 51,
+      "total": 120,
+      "range_low": 100,
+      "range_high": 207
+    }
+  ]
+}

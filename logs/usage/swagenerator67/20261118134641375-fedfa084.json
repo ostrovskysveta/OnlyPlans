@@ -1,0 +1,38 @@
+[
+  {
+    "ts": "2026-11-18T13:48:28.769Z",
+    "session_id": "20261118134641375-fedfa084",
+    "participant": "swagenerator67",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Публикация PR",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:48:29.066Z",
+    "session_id": "20261118134641375-fedfa084",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Журнал работы",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:48:29.310Z",
+    "session_id": "20261118134641375-fedfa084",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "GitHub",
+    "purpose": "Проверка доступа и попытка создания ветки",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:48:29.538Z",
+    "session_id": "20261118134641375-fedfa084",
+    "participant": "swagenerator67",
+    "kind": "tool",
+    "name": "Cloud Browser",
+    "purpose": "Проверка авторизации и открытие формы входа",
+    "version": "unknown"
+  }
+]

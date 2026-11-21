@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "20261118134641375-fedfa084",
+  "participant": "swagenerator67",
+  "task": "Открыть PR от имени участника после авторизации",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T13:46:41.380Z",
+  "ended_at": "2026-11-18T13:48:30.474Z",
+  "status": "interrupted",
+  "duration_sec": 109,
+  "tokens": {
+    "source": "estimated",
+    "total": 181,
+    "range_low": 146,
+    "range_high": 338,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Подключение GitHub вернуло 403. В облачном браузере открыта форма входа. Новых продуктовых решений не было.",
+  "token_samples": [
+    {
+      "id": "user-request",
+      "channel": "input",
+      "chars": 50,
+      "cyrillic_chars": 38,
+      "other_chars": 12,
+      "total": 26,
+      "range_low": 21,
+      "range_high": 44
+    },
+    {
+      "id": "github-response",
+      "channel": "tool",
+      "chars": 378,
+      "cyrillic_chars": 0,
+      "other_chars": 378,
+      "total": 95,
+      "range_low": 75,
+      "range_high": 189
+    },
+    {
+      "id": "final-reply",
+      "channel": "output",
+      "chars": 129,
+      "cyrillic_chars": 81,
+      "other_chars": 48,
+      "total": 60,
+      "range_low": 50,
+      "range_high": 105
+    }
+  ]
+}

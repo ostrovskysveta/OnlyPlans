@@ -1,0 +1,47 @@
+[
+  {
+    "ts": "2026-11-18T13:37:43.803Z",
+    "session_id": "20261118133657893-92b71a7a",
+    "participant": "swagenerator67",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Повторная попытка публикации",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:37:44.316Z",
+    "session_id": "20261118133657893-92b71a7a",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Журнал повторной попытки",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:37:44.550Z",
+    "session_id": "20261118133657893-92b71a7a",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "GitHub",
+    "purpose": "Повторная проверка ветки и доступа на запись",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:37:44.815Z",
+    "session_id": "20261118133657893-92b71a7a",
+    "participant": "swagenerator67",
+    "kind": "tool",
+    "name": "Cloud Browser",
+    "purpose": "Поиск существующей вкладки GitHub",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T13:37:45.070Z",
+    "session_id": "20261118133657893-92b71a7a",
+    "participant": "swagenerator67",
+    "kind": "tool",
+    "name": "git / Node.js",
+    "purpose": "Проверка локальной ветки и журналов",
+    "version": "unknown"
+  }
+]

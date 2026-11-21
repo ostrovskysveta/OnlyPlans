@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "20261118133657893-92b71a7a",
+  "participant": "swagenerator67",
+  "task": "Повторно отправить исследование и открыть PR в OnlyPlans",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T13:36:57.899Z",
+  "ended_at": "2026-11-18T13:37:45.938Z",
+  "status": "interrupted",
+  "duration_sec": 48,
+  "tokens": {
+    "source": "estimated",
+    "total": 196,
+    "range_low": 159,
+    "range_high": 365,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "GitHub отклонил создание ветки с 403. PR не создан. Авторизованная вкладка GitHub недоступна. Новых продуктовых решений не было.",
+  "token_samples": [
+    {
+      "id": "user-request",
+      "channel": "input",
+      "chars": 17,
+      "cyrillic_chars": 14,
+      "other_chars": 3,
+      "total": 9,
+      "range_low": 7,
+      "range_high": 16
+    },
+    {
+      "id": "github-response",
+      "channel": "tool",
+      "chars": 378,
+      "cyrillic_chars": 0,
+      "other_chars": 378,
+      "total": 95,
+      "range_low": 75,
+      "range_high": 189
+    },
+    {
+      "id": "final-reply",
+      "channel": "output",
+      "chars": 189,
+      "cyrillic_chars": 131,
+      "other_chars": 58,
+      "total": 92,
+      "range_low": 77,
+      "range_high": 160
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "ts": "2026-11-18T11:45:34.994Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "mode",
+    "name": "Default",
+    "purpose": "Оформление и публикация исследования",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T11:45:35.223Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "project-journal",
+    "purpose": "Сессия, решения и проверка журналов",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T11:45:35.388Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "skill",
+    "name": "personal-context",
+    "purpose": "Уточнение адреса командного репозитория",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T11:45:35.646Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "GitHub",
+    "purpose": "Проверка репозитория, отправка коммита и создание PR",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T11:45:35.784Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "mcp",
+    "name": "Personal Context",
+    "purpose": "Сверка командного и тестового репозиториев",
+    "version": "unknown"
+  },
+  {
+    "ts": "2026-11-18T11:45:36.116Z",
+    "session_id": "20261118114233430-730991e9",
+    "participant": "swagenerator67",
+    "kind": "tool",
+    "name": "git / Node.js",
+    "purpose": "Изолированная ветка, оформление документа и проверка журнала",
+    "version": "unknown"
+  }
+]

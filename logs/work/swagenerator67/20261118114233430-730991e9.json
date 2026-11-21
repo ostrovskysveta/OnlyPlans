@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "id": "20261118114233430-730991e9",
+  "participant": "swagenerator67",
+  "task": "Оформить конкурентное исследование сервисов роадмапов и добавить его в OnlyPlans",
+  "environment": "Codex / GPT-6.2 Sol",
+  "started_at": "2026-11-18T11:42:33.436Z",
+  "ended_at": "2026-11-18T11:45:37.998Z",
+  "status": "closed",
+  "duration_sec": 185,
+  "tokens": {
+    "source": "estimated",
+    "total": 8938,
+    "range_low": 7510,
+    "range_high": 15692,
+    "scope": "observed_text",
+    "method": "characters-v1",
+    "evidence": "Доступные тексты запросов, ответов и инструментов; кириллица / 1.7, остальные символы / 4. Скрытый и повторно переданный контекст может быть не учтён. Это не billing usage."
+  },
+  "decisions_reviewed": true,
+  "capabilities_reviewed": true,
+  "result": "Подготовлен Markdown с шестью разборами, ссылками, выводами и сценариями проверки MVP. Учтены доступный запрос, текст документа, черновик ответа и один вывод проверки репозитория.",
+  "token_samples": [
+    {
+      "id": "current-user-request",
+      "channel": "input",
+      "chars": 79,
+      "cyrillic_chars": 55,
+      "other_chars": 24,
+      "total": 39,
+      "range_low": 32,
+      "range_high": 67
+    },
+    {
+      "id": "research-document",
+      "channel": "output",
+      "chars": 17209,
+      "cyrillic_chars": 12124,
+      "other_chars": 5085,
+      "total": 8404,
+      "range_low": 7079,
+      "range_high": 14667
+    },
+    {
+      "id": "repository-check",
+      "channel": "tool",
+      "chars": 1503,
+      "cyrillic_chars": 0,
+      "other_chars": 1503,
+      "total": 376,
+      "range_low": 300,
+      "range_high": 752
+    },
+    {
+      "id": "final-reply-draft",
+      "channel": "output",
+      "chars": 241,
+      "cyrillic_chars": 171,
+      "other_chars": 70,
+      "total": 119,
+      "range_low": 99,
+      "range_high": 206
+    }
+  ]
+}
